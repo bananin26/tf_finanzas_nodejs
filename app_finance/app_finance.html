@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>BMW Finance</title>
+    <!-- MATERIAL ICONS CDN-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!-- GOOGLE FONTS (POPPINS)-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="./css/styles_finance.css">
+    <link rel="icon" href="http://127.0.0.1/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="http://127.0.0.1/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>  
+<body>
+    <nav>
+        <div class="container">
+            <a href="/app_finance/app_finance.html">
+                <img src="./images/logo.png" class="logo">
+            </a>                   
+          <div class="search-bar">
+            <span class="material-icons-sharp">search</span>
+            <input type="search" placeholder="Search">
+          </div>
+          <div class="profile-area">
+            <div class="theme-btn">
+              <span class="material-icons-sharp active">light_mode</span>
+              <span class="material-icons-sharp">dark_mode</span>
+            </div>
+            <div class="profile">
+              <div class="profile-photo-main">
+                <img src="./images/profile-default.jpg">
+              </div>
+              <h5></h5>
+            </div>
+            <button id="menu-btn">
+                <span class="material-icons-sharp">menu</span>
+              </button>
+          </div>
+        </div>
+      </nav>
+      
+    <!-- END OF NAVBAR-->
+
+    <main>
+        <aside>
+            <button id="close-btn">
+                <span class="material-icons-sharp">close</span>
+            </button>
+
+            <div class="sidebar">
+                <a href="#" class="active">
+                    <span class="material-icons-sharp">dashboard</span>
+                    <h4>Dashboard</h4>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">person</span>
+                    <h4>Profile</h4>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">shield</span>
+                    <h4>Security</h4>
+                </a>
+                <a class="logout">
+                    <span class="material-icons-sharp">logout</span>
+                    <h4>Logout</h4>
+                </a>
+            </div>
+            <!-- END OF SIDEBAR -->
+        </aside>
+        <!-------------------- END OF ASIDE ----------------------->
+        
+        <section class="middle">
+            <br><br><br>
+            <div class="container-carousel">
+                <div id="slide">
+                    <div class="item" style="background-image: url(/auto_simulator/images/autos/auto1/auto1_1.jpg);">
+                        <div class="content">
+                            <div class="name">BMW X1</div>
+                            <div class="des">El nuevo BMW X1 convence por su versatilidad y funcionalidad:
+                              Lenguaje de diseño claramente estructurado en el exterior para una presencia segura y deportiva.
+                            </div>
+                            <div class="button-container">
+                                <a href="/auto_simulator/auto_simulator.html?auto_id=1"><button id="cotizar1">Ver más</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(/auto_simulator/images/autos/auto2/auto2_1.jpg);">
+                        <div class="content">
+                            <div class="name">BMW iX1 2024</div>
+                            <div class="des">El primer BMW iX1 totalmente eléctrico destaca por su funcionalidad y versatilidad, en la vida diaria:
+                              Exterior llamativo gracias a su nuevo diseño. 
+                            </div>
+                            <div class="button-container">
+                                <a href="/auto_simulator/auto_simulator.html?auto_id=2"><button id="cotizar2">Ver más</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(/auto_simulator/images/autos/auto3/auto3_1.jpg);">
+                        <div class="content">
+                            <div class="name">BMW X2</div>
+                            <div class="des">Absolutamente único y extraordinario. El BMW X2 es un modelo deportivo y atlético que ofrece unas prestaciones dinámicas y ágiles insuperables en esta categoría. Con un interior exclusivo y tecnologías innovadoras, es el protagonista de una nueva época. ¿Estás preparado?</div>
+                            <div class="button-container">
+                                <a href="/auto_simulator/auto_simulator.html?auto_id=3"><button id="cotizar3">Ver más</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(/auto_simulator/images/autos/auto4/auto4_1.jpg);">
+                        <div class="content">
+                            <div class="name">BMW X4 M 2024</div>
+                            <div class="des">Una rebeldía inspiradora: la gama de autos deportivos BMW X4 M combina el potencial de alto rendimiento y la exclusividad de un modelo M con el concepto avanzado de un BMW X4.</div>
+                            <div class="button-container">
+                                <a href="/auto_simulator/auto_simulator.html?auto_id=4"><button id="cotizar4">Ver más</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(/auto_simulator/images/autos/auto5/auto5_1.jpg);">
+                        <div class="content">
+                            <div class="name">BMW M440i xDrive Gran Coupé</div>
+                            <div class="des">Poder, precisión y pura estética. El corazón del nuevo BMW M440i xDrive Gran Coupé es un motor de gasolina de 6 cilindros en línea BMW M TwinPower Turbo con 387 HP.</div>
+                            <div class="button-container">
+                                <a href="/auto_simulator/auto_simulator.html?auto_id=5"><button id="cotizar5">Ver más</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(/auto_simulator/images/autos/auto6/auto6_1.jpg);">
+                        <div class="content">
+                            <div class="name">BMW M2 Coupé</div>
+                            <div class="des">
+                              Consumo de combustible en l/100 km (promedio): 9.6–10.2
+                              Emisiones de CO2 en g/km (promedio): 218–230
+                              
+                              BMW M240i Coupé:
+                              Consumo de combustible en l/100 km (promedio): 7.8–8.5
+                              Emisiones de CO2 en g/km (promedio): 177–192</div>
+                            <div class="button-container">
+                                <a href="/auto_simulator/auto_simulator.html?auto_id=6"><button id="cotizar6">Ver más</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(/auto_simulator/images/autos/auto7/auto7_1.jpg);">
+                        <div class="content">
+                            <div class="name">BMW Z4 M40i</div>
+                            <div class="des">Abierto, plano y orientado al alto desempeño. Con su frontal amplio, llantas grandes, capó alargado y numerosos detalles inspirados en el mundo de la competición, el BMW Z4 M40i acelera el pulso ya a primera vista.</div>
+                            <div class="button-container">
+                                <a href="/auto_simulator/auto_simulator.html?auto_id=7"><button id="cotizar7">Ver más</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(/auto_simulator/images/autos/auto8/auto8_1.jpg);">
+                        <div class="content">
+                            <div class="name">BMW Z4 Roadster</div>
+                            <div class="des">Cuando se abre el toldo, como máximo, es cuando ya no hay límites para el placer de conducir en el completamente nuevo BMW Z4. Un roadster que no pudo ser mejor: abierto, deportivo e inflexible.</div>
+                            <div class="button-container">
+                                <a href="/auto_simulator/auto_simulator.html?auto_id=8"><button id="cotizar8">Ver más</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(/auto_simulator/images/autos/auto9/auto9_1.jpg);">
+                        <div class="content">
+                            <div class="name">BMW Serie 1</div>
+                            <div class="des">BMW Serie 1 totalmente nuevo llegó para robar miradas. Esto se debe a su diseño inigualable y su lenguaje progresista que lo distinguen a primera vista entre la multitud. Lo mismo sucede con su interior, cuyo ambiente moderno inspira con su amplio espacio y sus componentes de calidad superior.</div>
+                            <div class="button-container">
+                                <a href="/auto_simulator/auto_simulator.html?auto_id=9"><button id="cotizar9">Ver más</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(/auto_simulator/images/autos/auto10/auto10_1.jpg);">
+                        <div class="content">
+                            <div class="name">BMW Serie 2 Convertible</div>
+                            <div class="des">Consumo de combustible en L/100 km (promedio): 6.2–6.0
+                              Emisiones de CO2 en g/km (promedio): 143–138</div>
+                            <div class="button-container">
+                                <a href="/auto_simulator/auto_simulator.html?auto_id=10"><button id="cotizar10">Ver más</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(/auto_simulator/images/autos/auto11/auto11_1.jpg);">
+                        <div class="content">
+                            <div class="name">BMW Serie 2 Coupé</div>
+                            <div class="des">Las proporciones poderosas se encuentran con el dinamismo deportivo: descubre el nuevo BMW Serie 2 Coupé. Gracia a su anchura de vía, 31 mm más amplia que en el modelo precedente, y a la arquitectura de la tracción trasera única en su clase.</div>
+                            <div class="button-container">
+                                <a href="/auto_simulator/auto_simulator.html?auto_id=11"><button id="cotizar11">Ver más</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(/auto_simulator/images/autos/auto12/auto12_1.jpg);">
+                        <div class="content">
+                            <div class="name">BMW M3 Sedán</div>
+                            <div class="des">La gama de autos de lujo Serie 3 Sedán M combina poderosas proporciones y un llamativo diseño de tres volúmenes y cuatro puertas con la deportividad característica de M. El BMW M3 Competition Sedán, con unos impresionantes 510 HP y un par de 650 Nm, lidera el extraordinario cuarteto.</div>
+                            <div class="button-container">
+                                <a href="/auto_simulator/auto_simulator.html?auto_id=12"><button id="cotizar12">Ver más</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(/auto_simulator/images/autos/auto13/auto13_1.jpg);">
+                        <div class="content">
+                            <div class="name">BMW i4 2024</div>
+                            <div class="des">Como primer vehículo totalmente eléctrico, el Gran Coupé aúna el extraordinario dinamismo de BMW i4 con un elevado confort y una óptima aptitud para la vida diaria.</div>
+                            <div class="button-container">
+                                <a href="/auto_simulator/auto_simulator.html?auto_id=13"><button id="cotizar13">Ver más</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(/auto_simulator/images/autos/auto14/auto14_1.jpg);">
+                        <div class="content">
+                            <div class="name">BMW M5 Sedán 2023</div>
+                            <div class="des">La gama de vehículos deportivos M de Serie 5 combina de forma extraordinaria la deportividad característica de M con la comodidad y la elegancia de una sedán ejecutiva.</div>
+                            <div class="button-container">
+                                <a href="/auto_simulator/auto_simulator.html?auto_id=14"><button id="cotizar14">Ver más</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(/auto_simulator/images/autos/auto15/auto15_1.jpeg);">
+                        <div class="content">
+                            <div class="name">BMW Serie 5 Híbrido Enchufable</div>
+                            <div class="des">Los vehículos híbridos conectables combinan las ventajas de un vehículo con motor de combustión con las ventajas de un vehículo eléctrico. </div>
+                            <div class="button-container">
+                                <a href="/auto_simulator/auto_simulator.html?auto_id=15"><button id="cotizar15">Ver más</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(/auto_simulator/images/autos/auto16/auto16_1.jpg);">
+                        <div class="content">
+                            <div class="name">BMW Serie 8 Gran Coupé</div>
+                            <div class="des">Los BMW Serie 8 Gran Coupé M son vehículos deportivos destacables con cuatro puertas. Éstos combinan las habilidades de ingeniería de BMW M con la exclusividad de la Clase de Lujo de BMW para generar experiencias de conducción excepcionales con un atractivo de lujo.</div>
+                            <div class="button-container">
+                                <a href="/auto_simulator/auto_simulator.html?auto_id=16"><button id="cotizar16">Ver más</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(/auto_simulator/images/autos/auto17/auto17_1.jpg);">
+                        <div class="content">
+                            <div class="name">BMW M235i xDrive Gran Coupé</div>
+                            <div class="des">El nuevo proyecto de San Isidro está ubicado en Calle Amador Merino Reyna y ofrece depas de 1 y 2 dormitorios. Cuenta con áreas comunes como áreas verdes, gimnasio y parque privado.</div>
+                            <div class="button-container">
+                                <a href="/auto_simulator/auto_simulator.html?auto_id=17"><button id="cotizar17">Ver más</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(/auto_simulator/images/autos/auto18/auto18_1.jpg);">
+                        <div class="content">
+                            <div class="name">BMW X7 M850i</div>
+                            <div class="des">Lujo en cada terreno: el BMW X7 M combina elegancia suprema con un rendimiento offroad deportivo. Su sobresaliente aspecto con impresionantes genes de SAV y elementos de diseño específicos de M es testigo del excepcional potencial de la dinámica de conducción de los vehículos.</div>
+                            <div class="button-container">
+                                <a href="/auto_simulator/auto_simulator.html?auto_id=18"><button id="cotizar18">Ver más</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button id="prev"><i class="fa-solid fa-angle-left"></i></button>
+                        <button id="next"><i class="fa-solid fa-angle-right"></i></button>
+                    </div>
+                </div>
+            </div>
+            <script>
+                //carrousel
+                document.getElementById('next').onclick = function(){
+                let lists = document.querySelectorAll('.item');
+                document.getElementById('slide').appendChild(lists[0]);
+                }
+                document.getElementById('prev').onclick = function(){
+                let lists = document.querySelectorAll('.item');
+                document.getElementById('slide').prepend(lists[lists.length - 1]);
+                }   
+            </script>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </section>
+
+        <section class="first_operation">
+        <div class="main-content">
+                <!-- Header -->
+                <div class="header pb-8 pt-5 pt-lg-8 d-flex align-items-center" style="min-height: 600px; background-image: url(./images/lock2.jpg); background-size: cover; background-position: center top;">
+                  <!-- Mask -->
+                  <span class="mask bg-gradient-default opacity-8"></span>
+                  <!-- Header container -->
+                  <div class="container-fluid d-flex align-items-center">
+                    <div class="row">
+                      <div class="col-lg-7 col-md-10">
+                        <h1 class="display-2 text-white">Hello Jesse</h1>
+                        <p class="text-white mt-0 mb-5">Esta es la página de tu perfil. Puedes ver el progreso que has hecho con tu trabajo y gestionar tus proyectos o tareas asignadas</p>
+                        <a id="edit-profile-button" href="#!" class="btn btn-info">Edit profile</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Page content -->
+                <div class="container-fluid mt--7">
+                  <div class="row">
+                    <div class="col-xl-4 order-xl-2 mb-5 mb-xl-0">
+                      <div class="card card-profile shadow">
+                        <div class="row justify-content-center">
+                          <div class="col-lg-3 order-lg-2">
+                            <div class="card-profile-image">
+                              <a href="#">
+                                <img src="./images/profile-default.jpg" class="rounded-circle">
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-header text-center border-0 pt-8 pt-md-4 pb-0 pb-md-4">
+                          </div>
+                        <div class="card-body pt-0 pt-md-4">
+                          <div class="text-center">
+                            <h3>
+                              Jessica Jones<span class="font-weight-light"></span>
+                            </h3>
+                            <div class="h5 font-weight-300">
+                              <i class="ni location_pin mr-2"></i>Bucharest, Romania
+                            </div>
+                            <div class="h5 mt-4">
+                              <i class="ni business_briefcase-24 mr-2"></i>Financiamiento BMW
+                            </div>
+                            <div>
+                              <i class="ni education_hat mr-2"></i>Universidad de Finanzas
+                            </div>
+                            <hr class="my-4">
+                            <p></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-8 order-xl-1">
+                      <div class="card bg-secondary shadow">
+                        <div class="card-header bg-white border-0">
+                          <div class="row align-items-center">
+                            <div class="col-8">
+                              <h3 class="mb-0">My account</h3>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <form>
+                            <h6 class="heading-small text-muted mb-4">User information</h6>
+                            <div class="pl-lg-4">
+                              <div class="row">
+                                <div class="col-lg-6">
+                                  <div class="form-group focused">
+                                    <label class="form-control-label" for="input-username">Username</label>
+                                    <input type="text" id="input-username" class="form-control form-control-alternative" placeholder="Username">
+                                  </div>
+                                </div>
+                                <div class="col-lg-6">
+                                  <div class="form-group">
+                                    <label class="form-control-label" for="input-email">Email address</label>
+                                    <input type="email" id="input-email" class="form-control form-control-alternative" placeholder="jesse@example.com">
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-lg-6">
+                                  <div class="form-group focused">
+                                    <label class="form-control-label" for="input-first-name">First name</label>
+                                    <input type="text" id="input-first-name" class="form-control form-control-alternative" placeholder="First name" value="Lucky">
+                                  </div>
+                                </div>
+                                <div class="col-lg-6">
+                                  <div class="form-group focused">
+                                    <label class="form-control-label" for="input-last-name">Last name</label>
+                                    <input type="text" id="input-last-name" class="form-control form-control-alternative" placeholder="Last name">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <hr class="my-4">
+                            <!-- Address -->
+                            <h6 class="heading-small text-muted mb-4">Contact information</h6>
+                            <div class="pl-lg-4">
+                              <div class="row">
+                                <div class="col-md-12">
+                                  <div class="form-group focused">
+                                    <label class="form-control-label" for="input-address">Address</label>
+                                    <input id="input-address" class="form-control form-control-alternative" placeholder="Direccion" type="text">
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-lg-4">
+                                  <div class="form-group focused">
+                                    <label class="form-control-label" for="input-city">City</label>
+                                    <input type="text" id="input-city" class="form-control form-control-alternative" placeholder="Ciudad">
+                                  </div>
+                                </div>
+                                <div class="col-lg-4">
+                                  <div class="form-group focused">
+                                    <label class="form-control-label" for="input-country">Country</label>
+                                    <input type="text" id="input-country" class="form-control form-control-alternative" placeholder="Pais">
+                                  </div>
+                                </div>
+                                <div class="col-lg-4">
+                                  <div class="form-group">
+                                    <label class="form-control-label" for="input-country">Postal code</label>
+                                    <input type="number" id="input-postal-code" class="form-control form-control-alternative" placeholder="Codigo Postal">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <hr class="my-4">
+                            <!-- Description -->
+                            <h6 class="heading-small text-muted mb-4">About me</h6>
+                            <div class="pl-lg-4">
+                                <div class="form-group focused">
+                                    <label>About Me</label>
+                                    <div style="position: relative;">
+                                        <textarea id="about-me-1" rows="4" class="form-control form-control-alternative" placeholder="A few words about you ..."></textarea>
+                                        <span id="word-count" style="position: absolute; bottom: 8px; right: 12px; color: #8898aa;"></span>
+                                    </div>
+                                </div>                      
+                            </div>
+                            <div class="button-container">
+                                <button id="aplicar" type="submit">Aplicar</button>
+                              </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </section>          
+
+          <section class="security">
+            <div class="main-content">
+              <!-- Header -->
+              <div class="header pb-8 pt-5 pt-lg-8 d-flex align-items-center" style="min-height: 600px; background-image: url(./images/lock.jpg); background-size: cover; background-position: center top;">
+                <!-- Mask -->
+                <span class="mask bg-gradient-default opacity-8"></span>
+                <!-- Header container -->
+                <div class="container-fluid d-flex align-items-center">
+                  <div class="row">
+                    <div class="col-lg-7 col-md-10">
+                      <h1 id="security-h1" class="display-2 text-white">Hello Jesse</h1>
+                      <p class="text-white mt-0 mb-5">¡Bienvenido a la pestaña de seguridad! Aquí podrás gestionar y actualizar tus opciones de seguridad para proteger tu cuenta. Desde cambiar tu contraseña hasta configurar la autenticación de dos factores, esta página te brinda las herramientas necesarias para mantener tu información segura.</p>
+                      <a id="edit-profile-button-2" href="#!" class="btn btn-info">Edit Password</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Page content -->
+              <div class="container-fluid mt--7">
+                <div class="row">
+                  <div class="col-xl-4 order-xl-2 mb-5 mb-xl-0">
+                    <div class="card card-profile shadow">
+                      <div class="row justify-content-center">
+                        <div class="col-lg-3 order-lg-2">
+                          <div class="card-profile-image">
+                            <a href="#">
+                              <img id="image-profile-2" src="https://demos.creative-tim.com/argon-dashboard/assets-old/img/theme/team-4.jpg" class="rounded-circle">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-header text-center border-0 pt-8 pt-md-4 pb-0 pb-md-4">
+                      </div>
+                      <div class="card-body pt-0 pt-md-4">
+                        <div class="text-center">
+                          <h3 id="h3-2">
+                            Jessica Jones<span class="font-weight-light"></span>
+                          </h3>
+                          <div id="location" class="h5 font-weight-300">
+                            <i class="ni location_pin mr-2"></i>Bucharest, Romania
+                          </div>
+                          <div class="h5 mt-4">
+                            <i class="ni business_briefcase-24 mr-2"></i>Financiamiento BMW
+                          </div>
+                          <div>
+                            <i class="ni education_hat mr-2"></i>Universidad de Finanzas
+                          </div>
+                          <hr class="my-4">
+                          <p id="text-desc"></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-8 order-xl-1">
+                    <div class="card bg-secondary shadow">
+                      <div class="card-header bg-white border-0">
+                        <div class="row align-items-center">
+                          <div class="col-8">
+                            <h3 class="mb-0">Security</h3>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <form>
+                          <h6 class="heading-small text-muted mb-4">Password information</h6>
+                          <div class="pl-lg-4">
+                            <div class="form-group focused">
+                              <label class="form-control-label" for="input-username">Current Password</label>
+                              <input type="password" id="input-current-password" class="form-control form-control-alternative" placeholder="Current Password">
+                            </div>
+                            <div class="form-group">
+                              <label class="form-control-label" for="input-email">New Password</label>
+                              <input type="password" id="input-new-password" class="form-control form-control-alternative" placeholder="New Password">
+                            </div>
+                            <div class="form-group focused">
+                              <label class="form-control-label" for="input-first-name">Repeat New Password</label>
+                              <input type="password" id="input-confirm-password" class="form-control form-control-alternative" placeholder="Repeat New Password">
+                            </div>
+                          </div>
+                          <div class="button-container">
+                            <button id="aplicar2" type="submit">Aplicar</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          
+        <!-- END OF RIGHT -->
+    </main>
+    <!--================== END OF ASIDE =====================-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js" integrity="sha512-GMGzUEevhWh8Tc/njS0bDpwgxdCJLQBWG3Z2Ct+JGOpVnEmjvNx6ts4v6A2XJf1HOrtOsfhv3hBKpK9kE5z8AQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/script_finance.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

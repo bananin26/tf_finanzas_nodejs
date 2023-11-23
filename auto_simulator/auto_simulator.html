@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Admin Dashboard using HTML, CSS & JavaScript</title>
+    <!-- MATERIAL ICONS CDN-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!-- GOOGLE FONTS (POPPINS)-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+    <!-- STYLESHEET -->
+    <link rel="icon" href="http://127.0.0.1/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="http://127.0.0.1/favicon.ico" type="image/x-icon">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="./css/auto_simulator.css">
+</head>  
+<body>
+    <nav>
+        <div class="container">
+            <a href="/app_finance/app_finance.html">
+                <img src="./images/logo.png" class="logo">
+            </a>   
+            <div class="search-bar">
+                <span class="material-icons-sharp">search</span>
+                <input type="search" placeholder="Search">
+            </div>
+            <div class="profile-area">
+                <div class="theme-btn">
+                    <span class="material-icons-sharp active">light_mode</span>
+                    <span class="material-icons-sharp">dark_mode</span>
+                </div>
+                <div class="profile">
+                    <div class="profile-photo">
+                        <img src="">
+                    </div>
+                    <h5></h5>
+                    <span class="material-icons-sharp">expand_more</span>
+                </div>
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">menu</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <!-- END OF NAVBAR-->
+
+    <main>
+        <aside>
+            <button id="close-btn">
+                <span class="material-icons-sharp">close</span>
+            </button>
+
+            <div class="sidebar">
+                <a href="#" class="active">
+                    <span class="material-icons-sharp">info</span>
+                    <h4>Information</h4>
+                </a>
+                <a href="#" class="">
+                    <span class="material-icons-sharp">event</span>
+                    <h4>Schedule</h4>
+                </a>
+            </div>
+            <!-- END OF SIDEBAR -->
+        </aside>
+        <!-------------------- END OF ASIDE ----------------------->
+        
+        <section class="middle">
+            <div class="slider">
+                <div class="slide">
+                    <input type="radio" name="radio-btn" id="radio1" checked>
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                    <input type="radio" name="radio-btn" id="radio5">
+                    <input type="radio" name="radio-btn" id="radio6">
+                    <input type="radio" name="radio-btn" id="radio7">
+                    <input type="radio" name="radio-btn" id="radio8">
+                    <input type="radio" name="radio-btn" id="radio9">
+                    <input type="radio" name="radio-btn" id="radio10">
+                    <input type="radio" name="radio-btn" id="radio11">
+                    <input type="radio" name="radio-btn" id="radio12">
+        
+                    <div class="st first">
+                        <img src="/auto_simulator/images/autos/auto1/auto1_1.jpg" alt="">
+                    </div>
+                    <div class="st">
+                        <img src="/auto_simulator/images/autos/auto1/auto1_2.jpg" alt="">
+                    </div>
+                    <div class="st">
+                        <img src="/auto_simulator/images/autos/auto1/auto1_3.jpg" alt="">
+                    </div>
+                    <div class="st">
+                        <img src="/auto_simulator/images/autos/auto1/auto1_4.jpg" alt="">
+                    </div>
+                    <div class="st">
+                        <img src="/auto_simulator/images/autos/auto1/auto1_5.jpg" alt="">
+                    </div>
+                    <div class="st">
+                        <img src="/auto_simulator/images/autos/auto1/auto1_6.jpg" alt="">
+                    </div>
+                    <div class="st">
+                        <img src="/auto_simulator/images/autos/auto1/auto1_7.jpg" alt="">
+                    </div>
+                    <div class="st">
+                        <img src="/auto_simulator/images/autos/auto1/auto1_8.jpg" alt="">
+                    </div>
+                    <div class="st">
+                        <img src="/auto_simulator/images/autos/auto1/auto1_9.jpg" alt="">
+                    </div>
+                    <div class="st">
+                        <img src="/auto_simulator/images/autos/auto1/auto1_10.jpg" alt="">
+                    </div>
+                    <div class="st">
+                        <img src="/auto_simulator/images/autos/auto1/auto1_11.jpg" alt="">
+                    </div>
+                    <div class="st">
+                        <img src="/auto_simulator/images/autos/auto1/auto1_12.jpg" alt="">
+                    </div>
+        
+                    <div class="nav-auto">
+                        <div class="a-b1"></div>
+                        <div class="a-b2"></div>
+                        <div class="a-b3"></div>
+                        <div class="a-b4"></div>
+                        <div class="a-b5"></div>
+                        <div class="a-b6"></div>
+                        <div class="a-b7"></div>
+                        <div class="a-b8"></div>
+                        <div class="a-b9"></div>
+                        <div class="a-b10"></div>
+                        <div class="a-b11"></div>
+                        <div class="a-b12"></div>
+                    </div>
+                </div>
+        
+                <div class="nav-m">
+                    <label for="radio1" class="m-btn"></label>
+                    <label for="radio2" class="m-btn"></label>
+                    <label for="radio3" class="m-btn"></label>
+                    <label for="radio4" class="m-btn"></label>
+                    <label for="radio5" class="m-btn"></label>
+                    <label for="radio6" class="m-btn"></label>
+                    <label for="radio7" class="m-btn"></label>
+                    <label for="radio8" class="m-btn"></label>
+                    <label for="radio9" class="m-btn"></label>
+                    <label for="radio10" class="m-btn"></label>
+                    <label for="radio11" class="m-btn"></label>
+                    <label for="radio12" class="m-btn"></label>
+                </div>     
+            </div>
+            <br><br>
+            <section class="right">
+                <div class="project">
+                    <div class="header">
+                        <h2>QUARZO</h2><br>
+                    </div>
+                    <div class="description">
+                        <p>Amplio departamento en Jesús María cuenta con dos puertas generosas, encontrarás suficiente espacio para acomodar a tu familia o aprovecharlo como una oficina en casa. Cada habitación ofrece comodidad y privacidad, mientras que los amplios ventanales permiten la entrada de luz natural, creando un ambiente luminoso y acogedor.</p>
+                    </div>
+                    <div class="columns">
+                        <div class="column">
+                            <div class="information">
+                                <h4>Especificaciones</h4>
+                                <p id="num-puertas"><span class="icon-1"></span>N.º Puertas: 2</p>
+                                <p id="num-kilometraje"><span class="icon-2"></span>Kilometraje: 1</p>
+                            </div>
+                            <div class="tipo_transmision_combustible">
+                                <h4>Caracteristicas</h4>
+                                <p id="combustible"><span class="icon-1"></span>Gasolina</p>
+                                <p id ="transmision"><span class="icon-2"></span>Automatica</p>
+                            </div>
+                            <div class="property-type">
+                                <h4>Estado</h4>
+                                <p id="estado"><span class="icon"></span>Nuevo</p>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="area">
+                                <h4>Año del Modelo</h4>
+                                <p id="anio_modelo"><span class="icon"></span>2023</p>
+                            </div>
+                            <div class="price">
+                                <h4>Precio</h4>
+                                <p id="price_t"><span class="icon"></span>339 900 soles</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <br>
+            <div class="button-container">
+                <button id="cotizar_top">Cotizar</button>
+            </div>
+        </section>            
+        
+        <!-- END OF MIDDLE -->
+
+        <!--SECOND OPERATION-->
+        <section class="second_operation first_operation">
+            <br>
+            <form id="simulator-form">
+              <table>
+                <tr>
+                    <td><label for="money-value">Tipo de Moneda</label></td>
+                    <td>
+                      <select id="money-value" name="money-value">
+                        <option value="" selected disabled>Seleccione</option>
+                        <option value="soles">Soles</option>
+                        <option value="dolares">Dolares</option>
+                      </select>
+                    </td>
+                  </tr>
+                <tr>
+                  <td><label for="home-value">Valor de auto</label></td>
+                  <td><input disabled type="number" id="home-value" name="home-value" ></td>
+                </tr>
+                <tr>
+                  <td><label for="initial-fee">Cuota inicial(%)</label></td>
+                  <td><input type="number" id="initial-fee" name="initial-fee"></td>
+                </tr>
+                <tr>
+                  <td><label for="financing-amount">Monto a financiar</label></td>
+                  <td><input type="number" id="financing-amount" name="financing-amount"></td>
+                </tr>
+                <tr>
+                    <td><label for="type-tasa">Tipo de Tasa</label></td>
+                    <td>
+                      <select id="type-tasa" name="type-tasa">
+                        <option value="tna" selected disabled>Tasa Nominal Anual</option>
+                      </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="value-tasa">Valor de la Tasa(%)</label></td>
+                    <td><input type="value-tasa" id="value-tasa" name="value-tasa"></td>
+                  </tr>
+                <tr>
+                  <td><label for="monthly-debt-insurance">Seguro de desgravamen mensual(%)</label></td>
+                  <td><input type="number" id="monthly-debt-insurance" name="monthly-debt-insurance"></td>
+                </tr>
+                <tr>
+                  <td><label for="mensual-riesgo">Seguro de riesgo mensual(%)</label></td>
+                  <td><input type="number" id="mensual-riesgo" name="mensual-riesgo"></td>
+                </tr> 
+                <tr> 
+                  <td><label for="numero-anios">Numero de años</label></td> 
+                  <td><input type="number" id="numero-anios" name="numero-anios"></td> 
+                </tr>    
+                <tr> 
+                    <td><label for="frecuencia-pago-dias">Frecuencia de pago (en dias)</label></td> 
+                    <td><input type="number" id="frecuencia-pago-dias" name="frecuencia-pago-dias"></td>
+                </tr>
+                <tr> 
+                    <td><label for="total-plazo-gracia-parcial">Total plazo de gracia parcial</label></td> 
+                    <td><input type="number" id="total-plazo-gracia-parcial" name="total-plazo-gracia-parcial"></td>
+                </tr>
+                <tr> 
+                    <td><label for="total-plazo-gracia-total">Total plazo de gracia total</label></td> 
+                    <td><input type="number" id="total-plazo-gracia-total" name="total-plazo-gracia-total"></td>
+                </tr>
+              </table>
+              <br>
+            </form>
+        </section>
+        <!--END OF THE SECOND OPERATION-->
+
+        <section class="schedule first_operation">
+            <table>
+                <thead>
+                  <tr>
+                    <th>Periodo</th>
+                    <th>TEM</th>
+                    <th>Plazo Gracia</th>
+                    <th>Saldo inicial</th>
+                    <th>Interés</th>
+                    <th>Cuota</th>
+                    <th>Amortización</th>
+                    <th>Seguro Degravamen</th>
+                    <th>Seguro Riesgo</th>
+                    <th>Saldo final</th>
+                    <th>Flujo</th>
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+            <br><br>
+            <table id="van-tir">
+                <thead>
+                  <tr>
+                    <th>VAN</th>
+                    <th>TIR</th>
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+        </section>
+
+        <section class="right">
+            <!-------------------------- END OF INVESTMENTS ------------------------>
+
+            <div class="investments">
+                <div class="header">
+                    <h2>Autos</h2>
+                    <a href="/app_finance/app_finance.html">Más <span class="material-icons-sharp">chevron_right</span></a>
+                </div>
+               
+                <div class="investment" data-id="1">
+                    <img src="./images/autos/auto1/auto1_1.jpg">
+                    <h4>QUARZO</h4>
+
+                    <div class="amount">
+                    <h4>S/.339,000</h4>
+                    </div>
+                </div>
+                <div class="investment" data-id="2">
+                    <img src="">
+                    <h4>QUARZO</h4>
+                    
+                    <div class="amount">
+                    <h4>S/.200,000</h4>
+                    </div>
+                </div>
+                <div class="investment" data-id="3">
+                    <img src="">
+                    <h4>QUARZO</h4>
+                   
+                    <div class="amount">
+                    <h4>S/.200,000</h4>
+                    </div>
+                </div>
+                <div class="investment" data-id="4">
+                    <img src="">
+                    <h4>QUARZO</h4>
+                    
+                    <div class="amount">
+                    <h4>S/.200,000</h4>
+                    </div>
+                </div>
+                <div class="investment" data-id="5">
+                    <img src="">
+                    <h4>QUARZO</h4>
+                   
+                    <div class="amount">
+                    <h4>S/.200,000</h4>
+                    </div>
+                </div>
+                <div class="investment" data-id="6">
+                    <img src="">
+                    <h4>QUARZO</h4>
+                   
+                    <div class="amount">
+                    <h4>S/.200,000</h4>
+                    </div>
+                </div>
+                <!-- FIN DE auto -->
+                
+                <!-- Agrega más autos aquí -->          
+            </div>
+               
+            <!-------- END OF RECENT TRANSACTIONS --------->
+        </section>
+        <!-- END OF RIGHT -->
+    </main>
+    <!--================== END OF ASIDE =====================-->
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>-->
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./js/auto_simulator.js"></script>
+</body>
+</html>
