@@ -762,9 +762,10 @@ function generarSugerencias() {
       if (Swal.getPopup().querySelector('#initial-fee').value) {
         if (Swal.getPopup().querySelector('#initial-fee').value < 0) {
           errors.push('La cuota inicial no puede ser un número negativo');
-        } else if (Swal.getPopup().querySelector('#initial-fee').value < 1 || Swal.getPopup().querySelector('#initial-fee').value > 99) {
-          errors.push('La cuota inicial debe estar entre 1 y 99%');
+        } else if (Swal.getPopup().querySelector('#initial-fee').value < 1 || Swal.getPopup().querySelector('#initial-fee').value > 40) {
+          errors.push('La cuota inicial debe estar entre 1 y 40%');
         }
+      
       }
 
       // Mostrar todos los errores
@@ -855,15 +856,11 @@ function generarSugerencias() {
           const seguroRiesgoMensual = Swal.getPopup().querySelector('#mensual-riesgo').value;
 
           // Validar que los valores de seguro de desgravamen mensual y seguro de riesgo mensual estén entre 1 y 99
-          if (seguroDesgravamenMensual < 1 || seguroDesgravamenMensual > 99) {
-            errors.push('El valor del seguro de desgravamen mensual debe estar entre 1 y 99');
+          if (seguroDesgravamenMensual < 0 || seguroDesgravamenMensual > 99) {
+            errors.push('El valor del seguro de desgravamen mensual debe estar entre 0 y 99');
           }
-          if (seguroRiesgoMensual < 1 || seguroRiesgoMensual > 99) {
-            errors.push('El valor del seguro de riesgo mensual debe estar entre 1 y 99');
-          }
-
-          if (errors.length > 0) {
-            Swal.showValidationMessage(errors.join('<br>'));
+          if (seguroRiesgoMensual < 0 || seguroRiesgoMensual > 99) {
+            errors.push('El valor del seguro de riesgo mensual debe estar entre 0 y 99');
           }
         }
       }).then((result) => {
