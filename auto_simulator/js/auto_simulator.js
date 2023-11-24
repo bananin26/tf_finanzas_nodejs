@@ -676,7 +676,6 @@ function generarSugerencias() {
           <select id="money-value" name="money-value">
             <option value="" selected disabled>Seleccione</option>
             <option value="soles">Soles</option>
-            <option value="dolares">Dolares</option>
           </select>
         </td>
       </tr>
